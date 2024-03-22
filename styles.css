@@ -142,11 +142,7 @@ body {
   font-size: 2rem;
   color: white;
   mix-blend-mode: color-dodge;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: right;
 }
 
 #blog .wrapper > div:last-child {
