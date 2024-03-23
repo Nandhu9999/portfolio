@@ -39,6 +39,15 @@ body {
 .noSelect:focus {
   outline: none !important;
 }
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-drag: none;
+}
 
 /* HEROBANNER */
 #herobanner {
@@ -159,7 +168,7 @@ body {
 #blog .wrapper {
   display: grid;
   place-content: center;
-  grid-template-columns: 1fr 4px 1fr;
+  grid-template-columns: 1fr 4px 1.5fr;
   gap: 15px;
   padding-inline: 10px;
   width: 100%;
