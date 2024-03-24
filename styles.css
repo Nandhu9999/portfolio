@@ -129,10 +129,13 @@ img {
   border-radius: 40px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  filter: blur(5px);
+  filter: blur(15px);
   transition: all 200ms;
 }
-#timeline > div img:hover {
+#timeline > div:hover h3 {
+  filter: blur(1px);
+}
+#timeline > div:hover img {
   border-radius: 15px;
   transition: all 200ms;
   filter: blur(0);
@@ -180,6 +183,9 @@ img {
   color: white;
   mix-blend-mode: color-dodge;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #blog .wrapper > div:last-child {
