@@ -118,8 +118,10 @@ img {
 #timeline > div h3 {
   position: absolute;
   font-size: 2rem;
-  color: color;
+  color: white;
+  opacity: 0.3;
   z-index: 2;
+  font-family: monospace;
   pointer-events: none;
   mix-blend-mode: difference;
 }
@@ -129,13 +131,10 @@ img {
   border-radius: 40px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  filter: blur(15px);
+  filter: blur(10px);
   transition: all 200ms;
 }
-#timeline > div:hover h3 {
-  filter: blur(1px);
-}
-#timeline > div:hover img {
+#timeline > div img:hover {
   border-radius: 15px;
   transition: all 200ms;
   filter: blur(0);
@@ -169,6 +168,10 @@ img {
 }
 
 #blog .wrapper {
+  opacity: 0;
+  pointer-events: none;
+  /* REMOVE THE ABOVE CODE */
+
   display: grid;
   place-content: center;
   grid-template-columns: 1fr 4px 1.5fr;
